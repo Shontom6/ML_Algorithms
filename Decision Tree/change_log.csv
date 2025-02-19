@@ -1,0 +1,6 @@
+Refering ML_Basics.ipynb loaded dataset into a dataframe
+checked for any NA values in the dataset
+since the dataframe is having numerical values removed encoding nominal features into numeric values as in reference 
+Train the model and test with the test data 
+Checking the accuracy of the model
+Plotting the correlation of the features

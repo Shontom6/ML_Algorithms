@@ -1,0 +1,6 @@
+data = skd.load_boston()  changed as it was showing error to pandas read_csv
+Using Altair software found the correlation of the data
+In the jupyter file it was didvoed into train and test data so used train_test_split to divide the data into train and test data
+for checking accuracy after prediction it was giving error as y_test was int and y_pred was float s using numpy converted y_pred to int as trying to convert y_test to float also gave error
+
+Using feature_importances_ plotted the importance of each column with the target column

@@ -1,0 +1,10 @@
+Loaded the dataset from a CSV file using Pandas to create a DataFrame.
+Separated the features (X) and the target variable (y). The features include all columns except for the target, which is "custcat".
+Split the dataset into training (80%) and testing (20%) sets to train the model on one part and test its generalization ability on another.
+Scaled the features using StandardScaler() to normalize them, ensuring that all features contribute equally to the model, which is important for distance-based algorithms like KNN.
+Trained the KNN classifier with an initial value of k=2 and used it to predict the target values on the test set.
+Used a loop to evaluate the KNN model with various values of k (from 1 to 99), calculating the accuracy for each k and storing the results in a list.
+Identified the optimal k by finding the index of the highest accuracy score using np.argmax(), and extracted the best accuracy value.
+Plotted the accuracy scores against k values to visualize how accuracy changes with different k values. Added a vertical red line to mark the optimal k.
+Printed the optimal value of k and the highest accuracy achieved as the final output.
+

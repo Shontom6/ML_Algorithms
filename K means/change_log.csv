@@ -1,0 +1,7 @@
+Removed unnecessary imports.
+Ensured Column1, Column2, Column3, and Column4 are dropped.
+Applied LabelEncoder() on status_type before dropping it from X.
+Standardized all numerical features using StandardScaler().
+Cheked the inertia for k = 1 to 10.
+Choose 3 as optimal value for k trainned the model with it.
+For visualising the clusters, plotted it using matplot and marked the centroids. 
