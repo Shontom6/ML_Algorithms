@@ -5,3 +5,4 @@ No,Change
 4,Train the model and test with the test data 
 5,Checking the accuracy of the model
 6,Plotting the correlation of the features
+7,Removed unused imports
