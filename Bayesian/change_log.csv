@@ -1,5 +1,6 @@
-Using 01_Naiye Bayes classification.ipynb as reference the data was loaded into the dataframe
-checked the accuracy without making any changes and it gave an accuracy of 0.94
-for checking the removed the scaling of data and got an accuracy of 0.92
-checked mutliple times with scaling and without scaling and the accuracy was high with scaling
-As the accuracyis high checked the data in test data and predicted data 
+No,Changes
+1,Using 01_Naiye Bayes classification.ipynb as reference the data was loaded into the dataframe
+2,checked the accuracy without making any changes and it gave an accuracy of 0.94
+3,for checking the removed the scaling of data and got an accuracy of 0.92
+4,checked mutliple times with scaling and without scaling and the accuracy was high with scaling
+5,As the accuracyis high checked the data in test data and predicted data 
