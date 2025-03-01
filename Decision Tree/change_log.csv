@@ -1,8 +1,8 @@
-No,Change
-1,Refering ML_Basics.ipynb loaded dataset into a dataframe
-2,checked for any NA values in the dataset
-3,since the dataframe is having numerical values removed encoding nominal features into numeric values as in reference 
-4,Train the model and test with the test data 
-5,Checking the accuracy of the model
-6,Plotting the correlation of the features
-7,Removed unused imports
+Change,Reason for Change,Estimated Time (mins),Difficulty (1-10)
+Changed dataset from titanic.csv to diabetes_dataset.csv,"The new dataset is related to diabetes classification instead of passenger data, making it more relevant for the task.",12,3
+"Removed unused columns (PassengerId, Name, etc.) from the Titanic dataset","The new dataset has different features, so these columns are no longer relevant.",2,4
+Removed data cleaning steps like handling NaN values,"The diabetes dataset does not have NaN values, so the cleaning step was unnecessary.",3,3
+Removed encoding of categorical variables (Sex column),"The diabetes dataset only contains numerical values, so encoding is not needed.",1,2
+Removed splitting features and target variables using np.split(),"Used a simpler method (df.drop() and df[""Outcome""]) for splitting the features and targets.",10,5
+Removed unnecessary conversion of target values to integers,"The target values in the diabetes dataset are already integers, so conversion was not needed.",4,2
+Added feature correlation heatmap visualization,"Included a heatmap to help visually analyze the correlations between features, which is helpful for beginners.",13,4

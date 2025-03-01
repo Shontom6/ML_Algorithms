@@ -1,7 +1,13 @@
-No,Change
-1,data = skd.load_boston()  changed as it was showing error to pandas read_csv
-2,Using Altair software found the correlation of the data
-3,In the jupyter file it was didvoed into train and test data so used train_test_split to divide the data into train and test data
-4,for checking accuracy after prediction it was giving error as y_test was int and y_pred was float s using numpy converted y_pred to int as trying to convert y_test to float also gave error
-5,Using feature_importances_ plotted the importance of each column with the target column
-6,removed unused imports
+No.,Change,Reason for Change,Estimated Time (mins),Difficulty (1-10)
+1,"data = skd.load_boston() changed to pd.read_csv(""winequality-white.csv"").",The original method was causing errors because sklearn.datasets.load_boston() is deprecated. Used pandas.read_csv() to load a custom dataset.,3,3
+2,Checked for Null values and found 1 in Gender and 3 in Speed_of_Impact.,Null values were checked in the dataset to ensure completeness before training the model.,3,2
+3,Calculated the mean of Speed_of_Impact and filled missing values.,Missing values in Speed_of_Impact were handled by filling with the mean to avoid errors in model training.,4,3
+4,Dropped rows with missing Gender values.,Rows with missing Gender values were dropped to ensure data consistency.,4,3
+5,Used train_test_split() for splitting data into train and test sets.,train_test_split() was used to split the data into training (80%) and testing (20%) sets for better model evaluation.,4,3
+6,Converted y_pred to integers using np.round() to fix float-integer type mismatch between y_test and y_pred.,The type mismatch error between y_test (int) and y_pred (float) was resolved by rounding y_pred to integers.,4,3
+7,"Used LabelEncoder() to convert categorical values (Gender, Helmet_Used, Seatbelt_Used) into binary.","Categorical features like Gender, Helmet_Used, and Seatbelt_Used were encoded as binary values to enable model training.",5,4
+8,Plotted feature importances using feature_importances_.,Visualized the importance of each feature for predicting the target variable to improve model interpretability.,6,4
+9,Checked model accuracy using accuracy_score() after predictions.,Accuracy was calculated and printed to evaluate model performance on the test set.,3,3
+10,Visualized feature correlation using a heatmap (sns.heatmap()).,Correlation heatmap was plotted to understand the relationships between features in the dataset.,5,3
+11,Removed unused imports.,"Cleaned up the code by removing unnecessary imports (tree, etc.), improving readability and efficiency.",3,2
+12,Used Altair for additional correlation analysis (alternative method).,Altair was used to analyze and visualize correlations as a complement to the heatmap.,5,4

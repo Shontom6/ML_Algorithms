@@ -1,7 +1,9 @@
-No,Changes
-1,Using 01_Naiye Bayes classification.ipynb as reference the data was loaded into the dataframe
-2,checked the accuracy without making any changes and it gave an accuracy of 0.94
-3,for checking the removed the scaling of data and got an accuracy of 0.92
-4,checked mutliple times with scaling and without scaling and the accuracy was high with scaling
-5,As the accuracyis high checked the data in test data and predicted data 
-6,Removed unwanted imports
+Change,Reason for Change,Estimated Time (mins),Difficulty (1-10)
+Changed dataset from iris.csv to Naive-Bayes-Classification-Data.csv,The new dataset focuses on predicting diabetes instead of classifying flowers.,15,2
+"Removed unnecessary imports (numpy, mpimg, %matplotlib inline)","These are not required for this task, simplifying the code.",1,1
+Removed image visualization (plt.imshow(img)),"The new dataset does not involve images, making this step unnecessary.",1,1
+Changed target variable from species to diabetes,"Adjusted for the new dataset, making it more relevant.",10,5
+Removed manual accuracy calculation from confusion matrix,"Used accuracy_score() from sklearn.metrics, which is a standard approach.",2,3
+Replaced confusion matrix visualization with a feature correlation heatmap,A correlation heatmap helps understand feature relationships better.,7,6
+Added df.corr() to analyze feature relationships,Helps in understanding how features influence the target variable.,5,4
+Added print() statements to display actual and predicted values,Makes it easier to check the accuracy of  model output.,2,2
