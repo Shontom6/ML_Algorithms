@@ -7,3 +7,4 @@ Removed manual accuracy calculation from confusion matrix,"Used accuracy_score()
 Replaced confusion matrix visualization with a feature correlation heatmap,A correlation heatmap helps understand feature relationships better.,7,6
 Added df.corr() to analyze feature relationships,Helps in understanding how features influence the target variable.,5,4
 Added print() statements to display actual and predicted values,Makes it easier to check the accuracy of  model output.,2,2
+
