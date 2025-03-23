@@ -30,4 +30,4 @@ input_array = np.array([input_data]).reshape(1, -1)
 if st.button("Predict Quality"):
     prediction = model.predict(input_array)
     predicted_quality = int(round(prediction[0]))  # Round to nearest integer
-    st.success(f"🍾 Predicted Wine Quality: {predicted_quality} (Scale: 3-9)")
+    st.success(f"🍾 Predicted Wine Quality: {predicted_quality}")
